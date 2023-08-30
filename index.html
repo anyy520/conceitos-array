@@ -1,0 +1,158 @@
+<head>
+    
+</head>
+
+
+<body>
+
+<p>
+
+
+    Como declarar os Arrays ? 
+    <h4 id="declaracaoArray"> 
+    </h4>
+</p>
+<hr>
+<p>
+    Como buscar o primeiro elemento do Array ?
+    <h4 id="primeiroElemento"> 
+    </h4>
+</p>
+<hr>
+<p>
+    Como buscar o segundo elemento do Array ?
+    <h4 id="segundoElemento"> 
+    </h4>
+</p>
+<hr>
+<p>
+    Como buscar o terceiro elemento do Array ?
+    <h4 id="terceiroElemento"> 
+    </h4>
+</p>
+<hr>
+<p>
+    Como obter o comprimento do Array ?
+    <h4 id="ComprimentoArray"> 
+    </h4>
+</p>
+<hr>
+<p>
+    Como utilizar o loop através do Array ?
+    <h4 id="loopArray"> 
+    </h4>
+</p>
+<hr>
+<p>
+    Como adicionar o elemento ao final do Array ?
+    <h4 id="adicionaElementoNoFim"> 
+    </h4>
+</p>
+<hr>
+<p>
+    Como adicionar mais elementos ao final do Array ?
+    <h4 id="maisUmElemento"> 
+    </h4>
+</p>
+<hr>
+<p>
+    Como declarar o array com letras do alfabeto ? 
+    <h4 id="alfabeto"> 
+    </h4>
+</p>
+<hr>
+<p>
+    Como organizar o array com o alfabeto ? 
+    <h4 id="alfabetoOrganizado"> 
+    </h4>
+</p>
+<hr>
+<p>
+    Como inverter o array com o alfabeto ? 
+    <h4 id="inverterArray"> 
+    </h4>
+</p>
+<hr>      
+<p>
+    Como declarar o array com números ? 
+    <h4 id="numerosArray"> 
+    </h4>
+</p>
+<hr>
+<p>
+    Como encontrar o número máximo de um array ? 
+    <h4 id="AquimaximumNumber"> 
+    </h4>
+</p>
+<hr>
+<p>
+    Como encontrar o número mínimo de um array ? 
+    <h4 id="aquiMinimumNumber"> 
+    </h4>
+</p>
+<script>
+    var fruits = ["Goiaba " , " Laranja ", " Manga "];
+    console.log(fruits);
+    document.getElementById("declaracaoArray").innerHTML = fruits;
+
+ var firstFruit = fruits[0];
+    console.log(firstFruit);
+    document.getElementById("primeiroElemento").innerHTML = firstFruit;
+
+var secondFruit = fruits[1];
+    console.log(secondFruit);
+    document.getElementById("segundoElemento").innerHTML = secondFruit;
+
+var thirdFruit = fruits[2];
+    console.log(thirdFruit);
+
+var lengthOfTheArray = fruits.length;document.getElementById("terceiroElemento").innerHTML = thirdFruit;
+
+    console.log(lengthOfTheArray);
+    document.getElementById("ComprimentoArray").innerHTML = lengthOfTheArray;
+
+var arrayValue = "";
+    for (i = 0; i < fruits.length; i++) {
+        console.log(fruits[i]);
+        arrayValue = arrayValue + fruits[i] + "<br>";
+    }
+    document.getElementById("loopArray").innerHTML = arrayValue;
+
+fruits.push("Limão");
+    console.log(fruits);
+    document.getElementById( "adicionaElementoNoFim").innerHTML = fruits;
+
+    fruits.push("Cereja");
+    console.log(fruits);
+    document.getElementById( "maisUmElemento").innerHTML = fruits;
+
+var alphabets = ["l" ,"a" , "e" , "j" , "b" , "g" , "f" , "h" , "c" , "d" , "i" , "k"];
+    console.log(alphabets);
+    document.getElementById("alfabeto").innerHTML = alphabets;
+
+ alphabets.sort();
+    console.log(alphabets);
+    document.getElementById("alfabetoOrganizado").innerHTML = alphabets;
+
+ alphabets.reverse();
+    console.log(alphabets);
+    document.getElementById("inverterArray").innerHTML = alphabets;
+
+var numbers = [45, 4 ,9 , 16 , 25];
+    console.log(numbers);
+    document.getElementById("numerosArray").innerHTML = numbers;
+
+
+var maximumNumber = Math.max.apply(Math, numbers);
+    console.log(maximumNumber);
+    document.getElementById("AquimaximumNumber").innerHTML = maximumNumber;
+
+
+
+ var minimumNumber = Math.min.apply(Math, numbers);
+    console.log(minimumNumber);
+    document.getElementById("aquiMinimumNumber").innerHTML = minimumNumber;
+
+</script>
+
+</body>
